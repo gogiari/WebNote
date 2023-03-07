@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제목</title>
+    <style>
+        /* css : cascading style seet */
+        h2 {border: 5px solid red;
+            color: blue;
+            height: 100px;}
+
+        p, div {border: 5px solid red;} /* display : block */
+        span {border: 5px solid red;}   /* display : inline */
+        /* span {display: block;} */
+        
+        /* display : block, inline, inlin-block */
+        input, div, p {height: 50px;}
+        span {height: 50px;} /* inline element는 height, width, 가 동작안함 */
+    </style>
+</head>
+<body>
+    <h2>제목</h2>
+    <input type="button" value="로그인" onclick="alert('메롱')"/>
+    <p>내용1</p>
+    <p>내용2</p>
+    <p>내용3</p>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <span>여기는</span>
+    <span>여기는 어디인가요?</span>
+</body>
+</html>

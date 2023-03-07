@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external style : 외부스타일 .css 파일로 여러페이지 공통 스타일 지정 -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    
+    <!-- internal style : 내부 스타일 <style> -->
+    
+    <style>
+        p, div { border: 5px solid blue;
+            color: red;
+        }
+
+        div {
+            /* margin: 10px; short-hand */
+            /* 
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; 
+            */
+            /* margin: 10px 10px 10px 10px; /*top right bottom left */
+            /* margin: 10px 10px 10px;      /*top right bottom */
+            /* margin: 10px 10px;           /*top right */
+            margin: 10px;                   /*top*/
+        }
+
+        #div1 {margin : 10px 0px 10px 0px; }
+        #div2 {margin : 20px 0px 30px 0px; }
+        #div3 {margin : 40px 0px 50px 0px; }
+
+    </style>
+</head>
+<body>
+    <!-- 이름은 id로 표시한다 한페이지에 한개만 사용-->
+    <!-- 해당 tag 에만 적용 style="color:cyan" inlin style -->
+    <p id="p1" style="color: cyan;">문단</p>
+    <p id="p2">문단</p>
+    <p id="p3">문단</p>
+    <hr/>
+    <!--div#$id*3 -->
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <!-- div#id${div$}*3 -->
+
+</body>
+</html>
